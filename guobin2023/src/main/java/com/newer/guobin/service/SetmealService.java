@@ -5,6 +5,7 @@ import com.newer.guobin.entity.TravelGroup;
 import com.newer.guobin.vo.PageResult;
 
 import java.util.List;
+import java.util.Map;
 
 public interface SetmealService {
 
@@ -58,5 +59,7 @@ public interface SetmealService {
     List<Setmeal> findAll();
 
     Setmeal findDescById(int id);
+
+    List<Map<String, Object>> findSetmealCount();
 
 }

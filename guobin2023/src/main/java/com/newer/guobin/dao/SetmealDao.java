@@ -69,4 +69,6 @@ public interface SetmealDao {
 
     Setmeal findDescById(int id);
 
+    List<Map<String, Object>> findSetmealCount();
+
 }

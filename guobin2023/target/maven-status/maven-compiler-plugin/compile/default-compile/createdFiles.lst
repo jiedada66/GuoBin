@@ -2,12 +2,17 @@ com\newer\guobin\service\OrderService.class
 com\newer\guobin\dao\SetmealDao.class
 com\newer\guobin\controller\OrderController.class
 com\newer\guobin\dao\OrderSettingDao.class
+com\newer\guobin\controller\ReportController.class
 com\newer\guobin\controller\SetmealController.class
 com\newer\guobin\service\impl\OrderSettingServiceImpl.class
 com\newer\guobin\dao\OrderDao.class
 com\newer\guobin\service\impl\OrderServiceImpl.class
 com\newer\guobin\controller\OrderSettingController.class
+com\newer\guobin\service\MemberService.class
+com\newer\guobin\service\ReportService.class
 com\newer\guobin\service\impl\SetmealServiceImpl.class
 com\newer\guobin\service\SetmealService.class
+com\newer\guobin\service\impl\ReportServiceImpl.class
+com\newer\guobin\service\impl\MemberServiceImpl.class
 com\newer\guobin\controller\ValidateCodeController.class
 com\newer\guobin\service\OrderSettingService.class

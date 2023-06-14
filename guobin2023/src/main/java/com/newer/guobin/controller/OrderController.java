@@ -4,6 +4,7 @@ import com.newer.guobin.constant.MessageConstant;
 import com.newer.guobin.constant.RedisMessageConstant;
 import com.newer.guobin.entity.Order;
 import com.newer.guobin.service.OrderService;
+import com.newer.guobin.util.SMSUtils;
 import com.newer.guobin.vo.Result;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,15 +54,15 @@ public class OrderController {
             //预约失败
             return result;
         }
-//        if(result.isFlag()){
-//            //预约成功，发送短信通知，短信通知内容可以是“预约时间”，“预约人”，“预约地点”，“预约事项”等信息。
-//            String orderDate = (String) map.get("orderDate");
-//            try {
-//                SMSUtils.sendShortMessage(telephone,orderDate);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
+        if(result.isFlag()){
+            //预约成功，发送短信通知，短信通知内容可以是“预约时间”，“预约人”，“预约地点”，“预约事项”等信息。
+            String orderDate = (String) map.get("orderDate");
+            try {
+                SMSUtils.sendShortMessage(telephone,orderDate);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
         return result;
     }
 
